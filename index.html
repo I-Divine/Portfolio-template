@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igwedinma Ifechukwu - Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Link to external CSS file -->
+
+    <script src="script.js"></script>
+    <!-- Link to external JavaScript file -->
+  </head>
+  <body>
+    <header>
+      <h1>Divine.Dev</h1>
+
+      <nav class="navbar">
+        <ul class="navbar-desktop">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-mobile">
+          <button class="nav-button" onclick="navVisibilityOn()">
+            <img src="./assets/icons/harmbuger-icon.svg" alt="" />
+          </button>
+          <div class="nav-bg invisible" id="mobile-nav">
+            <ul class="mobile-links">
+              <button
+                id="close-button"
+                class="nav-button"
+                onclick="navVisibilityOff()"
+              >
+                <img src="./assets/icons/close.svg" alt="" />
+              </button>
+
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar -->
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="profile-img">
+        <img src="./assets/images/myPhoto.jpg" alt="" />
+      </div>
+      <div class="hero-content">
+        <h1>Hi, I'm Igwedinma Ifechukwu Divine</h1>
+        <p>
+          Crafting intuitive and visually stunning web experiences. Turning
+          ideas into reality with code. Let's create something amazing together!
+        </p>
+        <a href="#portfolio" class="cta-button">Explore My Work</a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Divine a passionate Frontend Web Developer based in Lagos
+          with a deep love for programming. I thrive on transforming complex
+          problems into elegant, user-friendly solutions through code.
+          <br />
+          As a person, I'm reserved yet open-minded. I value deep conversations
+          and enjoy different perspectives. My focus and adaptability help me
+          continuously learn and grow as a developer. Thank you for visiting my
+          portfolio!
+        </p>
+      </div>
+      <div class="img-container">
+        <img src="/assets/images/aboutMe.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item">
+        <h3>FindIt</h3>
+        <p>
+          FindIt, lost and found system, connects owners to their lost items as
+          seamlessly and easily as possible. I contribute largely to the
+          frontend portion of this project
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <h3>GetLinked Landing Page</h3>
+        <p>
+          This is my solution to a design challenge hackathon, I found on
+          twitter
+        </p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Portfolio Website</h3>
+        <p>
+          I have made multiple portfolio websites for myself and for some of my
+          friends who are not into frontend.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Frontend: HTML, CSS, TailwindCSS, JavaScript, React</li>
+        <li>Backend: PHP, Firebase</li>
+        <li>Other: Git, REST APIs</li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Frontend Developer(Volunteerin) at ShadowDevs Community</h3>
+        <p>December 2023 - Present</p>
+        <p>
+          Contributed to the the frontend portion of FindIt, A lost and found
+          system for Babcock University
+        </p>
+      </div>
+      <div class="experience-item">
+        <h3>Frontend Developer at Nemendal</h3>
+        <p>16th July 2024 - Present</p>
+        <p>Assisted in building and maintaining websites for Nemendal...</p>
+      </div>
+      <div class="experience-item">
+        <h3>Frontend Developer at BUCC Dev team</h3>
+        <p>25th July 2024 - Present</p>
+        <p>
+          Assisting in building and maintaining BUCC(Babcock University Computer
+          Club) projects that would be utilized on campus.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>Babcock University, Ilishan-Remo, Presently Studying</p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials">
+      <h2>Testimonials</h2>
+      <blockquote>
+        <p>
+          "Divine is a highly skilled developer with a keen eye for design..."
+        </p>
+        <footer>- John Doe, Manager at TechCorp</footer>
+      </blockquote>
+      <blockquote>
+        <p>"Working with Divine was a fantastic experience..."</p>
+        <footer>- Jane Smith, Client</footer>
+      </blockquote>
+    </section> -->
+
+    <!-- Gallery Section -->
+    <!-- <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-item">
+        <img src="images/hiking.jpg" alt="Divine hiking in the mountains" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/beach.jpg" alt="Divine with friends at a beach" />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="images/conference.jpg"
+          alt="Divine attending a tech conference"
+        />
+      </div>
+      <div class="gallery-item">
+        <img src="images/photography.jpg" alt="Divine's photography work" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/coffeeshop.jpg" alt="Divine at a local coffee shop" />
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Let's connect! Whether you have a project in mind or just want to say
+        hello, I'd love to hear from you.
+      </p>
+      <form action="send-email.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/Divinejohnson">LinkedIn</a>
+        <a href="https://github.com/Divinejohnson">GitHub</a>
+        <a href="https://twitter.com/Divinejohnson">Twitter</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Igwedinm Ifechukwu. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
