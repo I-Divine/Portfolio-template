@@ -10,10 +10,17 @@
     <script src="script.js"></script>
     <!-- Link to external JavaScript file -->
   </head>
-  <body>
+  <body id="body" class="">
     <header>
       <h1>Divine.Dev</h1>
-
+      <div>
+        <button class="dark-off" onclick="turnOffDarkMode()">
+          <img src="./assets/icons/moon-icon.svg" alt="" />
+        </button>
+        <button class="dark-on" onclick="turnOnDarkMode()">
+          <img src="./assets/icons/sun-icon.svg" alt="" />
+        </button>
+      </div>
       <nav class="navbar">
         <ul class="navbar-desktop">
           <li><a href="#hero">Home</a></li>
@@ -63,9 +70,12 @@
         <a href="#portfolio" class="cta-button">Explore My Work</a>
       </div>
     </section>
-
+    <hr />
     <!-- About Me Section -->
     <section id="about">
+      <div class="img-container">
+        <img src="/assets/images/aboutMe.jpg" alt="" />
+      </div>
       <div class="about-content">
         <h2>About Me</h2>
         <p>
@@ -78,9 +88,6 @@
           continuously learn and grow as a developer. Thank you for visiting my
           portfolio!
         </p>
-      </div>
-      <div class="img-container">
-        <img src="/assets/images/aboutMe.jpg" alt="" />
       </div>
     </section>
 

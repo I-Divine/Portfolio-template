@@ -34,6 +34,16 @@
   --transition-speed: 300ms;
   --transition-delay: 100ms;
 }
+.dark,
+.dark * {
+  --primary-color: #dc3f3f;
+  --secondary-color: #b65d5d;
+  --background-color: #252222;
+  --nav-background-color: #352f2f;
+  --text-color: #d3d3d3;
+  --text-light-color: #fda4a4;
+  --border-color: #db7c7c;
+}
 h1,
 h2,
 h3,
@@ -48,10 +58,17 @@ ol {
   margin-bottom: 0px;
   color: var(--text-color);
 }
+hr {
+  border: 1px solid var(--border-color);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
 body,
 html {
   padding: 0px;
   margin: 0px;
+
   scroll-behavior: smooth;
   background-color: var(--background-color);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -62,7 +79,25 @@ a {
   text-decoration: none;
   transition: all var(--transition-duration) ease;
 }
-
+.dark-off {
+  display: none;
+}
+.dark .dark-off {
+  display: block;
+}
+.dark .dark-on {
+  display: none;
+}
+.dark-on,
+.dark-off {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
 header {
   position: sticky;
   top: 0px;
@@ -70,11 +105,9 @@ header {
   z-index: 10;
 }
 section {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-xl);
 }
-.navbar {
-  position: relative;
-}
+
 .navbar-desktop {
   display: none;
 }
@@ -119,6 +152,9 @@ section {
   height: 100vh;
   background-color: white;
 }
+.dark .mobile-links {
+  background-color: var(--nav-background-color);
+}
 .nav-bg {
   position: fixed;
   backdrop-filter: brightness(0.75);
@@ -143,12 +179,13 @@ header {
   align-items: center;
   justify-items: center;
   gap: 5%;
+  min-height: max-content;
   height: calc(100vh-70px);
   padding: var(--spacing-lg);
 }
 .profile-img {
   padding: var(--spacing-lg);
-  max-width: 500px;
+  max-width: 400px;
 }
 .profile-img img {
   border-radius: var(--border-radius-full);
@@ -198,10 +235,9 @@ header {
   justify-self: end;
 }
 #about {
-  padding: 0;
+  padding: var(--spacing-xl) 0px;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 .about-content {
@@ -224,5 +260,14 @@ header {
 
   #hero {
     grid-template-columns: repeat(2, 45%);
+  }
+  #about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about .about-content {
+    grid-row: 1/2;
+  }
+  #about .img-container {
+    grid-column: 2 span 1;
   }
 }
