@@ -349,9 +349,7 @@ header {
 }
 .slide img {
   width: 100%;
-}
-.slide {
-  width: 300px;
+  border-radius: var(--border-radius-xl);
 }
 
 #slider-container .btn:last-of-type {
@@ -369,6 +367,8 @@ header {
 #slider-container #slider .slide {
   height: 90%;
   margin: auto 10px;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
   display: grid;
   place-items: center;
 }
