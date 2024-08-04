@@ -69,15 +69,16 @@ hr {
 }
 h2 {
   color: var(--text-light-color);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
 }
 body,
 html {
   padding: 0px;
   margin: 0px;
-
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding: var(--spacing-xl);
   background-color: var(--background-color);
@@ -252,6 +253,7 @@ header {
 /* Portfolio Styling */
 .portfolio-content {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
   gap: var(--spacing-lg);
 }
@@ -272,6 +274,22 @@ header {
 #portfolio .img-container img {
   width: 100%;
 }
+.project-link {
+  color: white;
+  background-color: var(--secondary-color);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+}
+.project-link:hover {
+  background-color: var(--primary-color);
+}
+
+.project-link-container {
+  display: flex;
+  padding: var(--spacing-md);
+  justify-content: center;
+  gap: var(--spacing-md);
+}
 
 /* experience styling */
 .experience-container h3 {
@@ -283,6 +301,7 @@ header {
 }
 .experience-container {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
   gap: var(--spacing-lg);
 }
